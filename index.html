@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <title>Roberts Game - Level: Hard</title>
+</head>
+
+<body>
+  <div class="overlay-text visible">
+    Click to Start
+  </div>
+  <div id="game-over-text" class="overlay-text">
+    GAME OVER
+    <span class="overlay-text-small">Click to Restart</span>
+  </div>
+  <div id="victory-text" class="overlay-text">
+    VICTORY!
+    <span class="overlay-text-small">Click to Restart</span>
+  </div>
+
+  <div class="game-container">
+    <div class="game-info-container">
+      <div class="game-info">
+        Time <span id="time-remaining">20</span>
+      </div>
+
+      <div class="game-info">
+        Cups <span id="cups">0</span>
+      </div>
+    </div>
+    <br>
+    <div class="game-container">
+      <div class="backdrop">
+        <div class="small-images">
+          <img src="images/item.png" class="small-image1" id="item1" />
+          <img src="images/item.png" class="small-image2" id="item2" />
+          <img src="images/item.png" class="small-image3" id="item3" />
+          <img src="images/item.png" class="small-image4" id="item4" />
+          <img src="images/item.png" class="small-image5" id="item5" />
+          <img src="images/item.png" class="small-image6" id="item6" />
+          <img src="images/item.png" class="small-image7" id="item7" />
+          <img src="images/item.png" class="small-image8" id="item8" />
+          <img src="images/item.png" class="small-image9" id="item9" />
+          <img src="images/item.png" class="small-image10" id="item10" />
+          <img src="images/item.png" class="animation-item" id="animation-item" />
+        </div>
+        <div class="drop-container"></div>
+      </div>
+
+    </div>
+
+    <audio id="dropSound">
+      <source src="audio/coin.mp3" type="audio/mpeg" />
+    </audio>
+    <audio id="bgMusic" src="audio/elevator-music.mp3"></audio>
+
+    <audio id="allItemsPlacedSound">
+      <source src="audio/victory.mp3" type="audio/mpeg" />
+    </audio>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
